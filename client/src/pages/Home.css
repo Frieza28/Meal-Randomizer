@@ -1,18 +1,86 @@
-.home {
-  text-align: center;
-  padding: 2rem;
+.home-container {
+  display: flex;
+  align-items: stretch;       /* ⬅️ importante: faz os 2 lados ter mesma altura */
+  justify-content: center;
+  height: 100vh;
+  padding: 0 5%;
+  gap: 2rem;
+  margin: 0;
 }
 
-.home button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
+.home-image {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;               /* ⬅️ força a imagem a ocupar tudo */
+  display: flex;
+}
+
+.home-text {
+  flex: 1;
+  height: 50%;               /* ⬅️ igual à imagem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  text-align: left;
+}
+
+
+
+.home-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.home-text button {
+  padding: 0.75rem 1.5rem;
   background-color: #008CBA;
   color: white;
   border: none;
   border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.home button:hover {
+.home-text button:hover {
   background-color: #005f7f;
+}
+
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .home-image {
+    max-width: 100%;
+    max-height: 50%;
+  }
+
+  .carousel-container {
+    height: 250px; /* Altura mais razoável no mobile */
+  }
+
+  .carousel-container img {
+    height: 250px;
+  }
+
+  .home-text {
+    text-align: center;
+    height: auto;
+    padding: 1.5rem;
+
+  }
+
+  .home-text h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }
