@@ -3,8 +3,10 @@
   color: #ccc;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  width: 100%;
+  max-width: 100vw; /* <- PREVINE overflow horizontal */
+  overflow-x: hidden; /* <- corta qualquer transbordo horizontal */
 }
+
 
 .footer-content {
   max-width: 1200px;

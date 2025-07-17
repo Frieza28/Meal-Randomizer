@@ -1,86 +1,100 @@
 .home-container {
   display: flex;
-  align-items: stretch;       /* ⬅️ importante: faz os 2 lados ter mesma altura */
+  align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding: 0 5%;
+  min-height: calc(100vh - 200px); /* ou mesmo 220px */
+  padding: 4rem 5% 5rem 5%;
   gap: 2rem;
-  margin: 0;
 }
+
+
 
 .home-image {
   flex: 1;
-  max-width: 50%;
-  height: 100%;               /* ⬅️ força a imagem a ocupar tudo */
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.carousel-container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 .home-text {
   flex: 1;
-  height: 50%;               /* ⬅️ igual à imagem */
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
   text-align: left;
+  height: auto;
 }
-
-
 
 .home-text h1 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  text-align: justify;
+
 }
 
 .home-text p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  text-align: justify;
+
 }
-
-
-.home-text button {
+.btn-sortear {
   padding: 0.75rem 1.5rem;
-  background-color: #008CBA;
+  background-color: #03ba00;
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
+  margin: 1.5rem auto 0;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
-.home-text button:hover {
-  background-color: #005f7f;
+.btn-sortear:hover {
+  background-color: #029a00;
 }
+
+
 
 
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
-    padding: 0 1rem;
+    min-height: auto;
+    padding: 1rem;
   }
 
-  .home-image {
-    max-width: 100%;
-    max-height: 50%;
-  }
-
+  .home-image,
   .carousel-container {
-    height: 250px; /* Altura mais razoável no mobile */
+    max-width: 100%;
   }
 
   .carousel-container img {
-    height: 250px;
+    height: 300px;
   }
 
   .home-text {
     text-align: center;
-    height: auto;
-    padding: 1.5rem;
-
-  }
-
-  .home-text h1 {
-    text-align: center;
-    font-size: 1.8rem;
+    padding: 1rem;
   }
 }

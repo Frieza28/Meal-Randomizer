@@ -9,11 +9,16 @@ function Home() {
         <ImageCarousel />
       </div>
       <div className="home-text">
-        <h1>Bem-vindo ao Meal Randomizer</h1>
-        <p>Não sabes o que cozinhar? Clica abaixo para sortear uma refeição.</p>
-        <Link to="/randomizer">
-          <button>Sortear Refeição</button>
+        <h1>Perdes muito tempo a pensar no que fazer para o almoço ou jantar?</h1>
+        <p>
+          Carne ou Peixe? Algo rápido? Tantas opções para escolher!
+          Clica no botão abaixo!
+        </p>
+        
+       <Link to="/randomizer" className="btn-sortear">
+          Sortear Refeição
         </Link>
+       
       </div>
     </div>
   );
