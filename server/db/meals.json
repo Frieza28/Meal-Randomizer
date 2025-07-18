@@ -1,0 +1,23 @@
+[
+  {
+    "nome": "Frango grelhado com arroz",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Grelhado",
+    "ingredientes": ["frango", "arroz", "azeite", "sal", "alho"]
+  },
+  {
+    "nome": "Salmão no forno",
+    "tipo": "Peixe",
+    "tempo": "Normal",
+    "categoria": "Grelhado",
+    "ingredientes": ["salmão", "limão", "azeite", "sal", "ervas"]
+  },
+  {
+    "nome": "Ovos mexidos com espinafres",
+    "tipo": "Vegetariano",
+    "tempo": "Rápido",
+    "categoria": "Frito",
+    "ingredientes": ["ovos", "espinafres", "azeite", "sal"]
+  }
+]
