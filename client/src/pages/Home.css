@@ -5,6 +5,8 @@
   min-height: calc(100vh - 200px); /* ou mesmo 220px */
   padding: 4rem 5% 5rem 5%;
   gap: 2rem;
+  background-color: #EEF2F4;
+
 }
 
 
