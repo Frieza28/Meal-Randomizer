@@ -19,16 +19,25 @@ router.post('/lista', (req, res) => {
 });
 
 // Modo Escolha (filtros)
-router.post('/filtrar', (req, res) => {
+app.post('/randomizer/filtrar', (req, res) => {
+  console.log('Filtros recebidos:', req.body);  // ← Verifica se tipo, tempo e categoria vêm mesmo como strings vazias
+
   const { tipo, tempo, categoria } = req.body;
 
-  const filtradas = meals.filter((ref) =>
-    (!tipo || ref.tipo === tipo) &&
-    (!tempo || ref.tempo === tempo) &&
-    (!categoria || ref.categoria === categoria)
-  );
+  if (!tipo && !tempo && !categoria) {
+    return res.json([]);
+  }
 
-  res.json(filtradas);
+  const resultado = dados.filter(item => {
+    return (!tipo || item.tipo === tipo) &&
+           (!tempo || item.tempo === tempo) &&
+           (!categoria || item.categoria === categoria);
+  });
+
+  res.json(resultado);
 });
+
+
+
 
 module.exports = router;

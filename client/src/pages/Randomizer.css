@@ -1,31 +1,175 @@
 .randomizer-page {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 180px); /* reduzido para evitar overflow */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
   text-align: center;
 }
 
+
+.randomizer-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.modo-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
 .modo-buttons button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  border: 2px solid #03ba00;
+  color: #03ba00;
   font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.modo-buttons button:hover {
+  background-color: #03ba00;
+  color: white;
 }
 
 .modo-container {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-textarea {
+.modo-container textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
   width: 100%;
   max-width: 400px;
-  margin: 1rem 0;
 }
 
 .filtros select {
-  margin: 0.5rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+
+.filtros button {
+  background-color: #03ba00;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filtros button:hover {
+  background-color: #029a00;
 }
 
 .resultado {
-  margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  background-color: #e8fce7;
+  border: 2px solid #03ba00;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Envolve a página toda num min-height */
+body, html {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ocupa o espaço disponível */
+.randomizer-page {
+  flex: 1;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo para o botão SORTAR */
+.modo-container button,
+.filtros button {
+  background-color: #03ba00;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
   font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modo-container button:hover,
+.filtros button:hover {
+  background-color: #029a00;
+}
+
+.btn-sortear {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #03ba00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sortear:hover {
+  background-color: #029a00;
+}
+
+.modo-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modo-lista textarea {
+  width: 400px;
+  max-width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 1rem;
 }

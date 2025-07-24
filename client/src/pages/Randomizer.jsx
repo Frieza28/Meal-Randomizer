@@ -25,12 +25,20 @@ function Randomizer() {
   };
 
   const fetchEscolha = async () => {
+    // Bloquear quando nenhum filtro for selecionado
+    if (!filtros.tipo && !filtros.tempo && !filtros.categoria) {
+      setResultado({ nome: 'Nenhuma refeição encontrada.' });
+      return;
+    }
+  
     const res = await fetch('http://localhost:3001/randomizer/filtrar', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(filtros)
     });
+  
     const data = await res.json();
+  
     if (data.length > 0) {
       const random = data[Math.floor(Math.random() * data.length)];
       setResultado(random);
@@ -38,6 +46,8 @@ function Randomizer() {
       setResultado({ nome: 'Nenhuma refeição encontrada.' });
     }
   };
+
+
 
   return (
     <div className="randomizer-page">
@@ -57,14 +67,14 @@ function Randomizer() {
         )}
 
         {modo === 'lista' && (
-          <div>
+          <div className="modo-lista">
             <p>Insere uma lista (1 item por linha):</p>
             <textarea
               rows="5"
               value={lista}
               onChange={(e) => setLista(e.target.value)}
             />
-            <button onClick={fetchLista}>Sortear</button>
+            <button onClick={fetchLista} className="sortear-btn">Sortear</button>
           </div>
         )}
 
