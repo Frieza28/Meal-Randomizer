@@ -19,5 +19,180 @@
     "tempo": "Rápido",
     "categoria": "Frito",
     "ingredientes": ["ovos", "espinafres", "azeite", "sal"]
+  },
+  {
+    "nome": "Frango assado com batatas fritas",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Assado",
+    "ingredientes": ["frango", "batatas", "azeite", "sal"]
+  },
+  {
+    "nome": "Bacalhau com Natas",
+    "tipo": "Peixe",
+    "tempo": "Normal",
+    "categoria": "Forno",
+    "ingredientes": ["bacalhau", "natas", "batata", "cebola"]
+  },
+  {
+    "nome": "Pimentos Recheados",
+    "tipo": "Carne",
+    "tempo": "Normal",
+    "categoria": "Forno",
+    "ingredientes": ["carne picada", "pimentos", "queijo", "cebola"]
+  },
+  {
+    "nome": "Filetes com arroz",
+    "tipo": "Peixe",
+    "tempo": "Rápido",
+    "categoria": "Frito",
+    "ingredientes": ["filetes de peixe", "limão", "arroz", "sal"]
+  },
+  {
+    "nome": "Sortido de Rissóis",
+    "tipo": "Ambos",
+    "tempo": "Rápido",
+    "categoria": "Frito",
+    "ingredientes": ["rissóis de camarão", "rissóis de carne", "chamuças", "pastéis de bacalhau"]
+  },
+  {
+    "nome": "Almôndegas",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Estufado",
+    "ingredientes": ["carne picada", "molho de tomate", "cebola", "alho"]
+  },
+  {
+    "nome": "Hambúrguer com batatas",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Grelhado",
+    "ingredientes": ["hambúrguer", "batatas", "azeite", "sal"]
+  },
+  {
+    "nome": "Picanha com Arroz",
+    "tipo": "Carne",
+    "tempo": "Normal",
+    "categoria": "Grelhado",
+    "ingredientes": ["picanha", "arroz", "sal", "alho"]
+  },
+  {
+    "nome": "Açorda com Peixe Frito",
+    "tipo": "Peixe",
+    "tempo": "Demorado",
+    "categoria": "Frito",
+    "ingredientes": ["pão", "alho", "peixe frito", "ovos"]
+  },
+  {
+    "nome": "Migas à alentejana",
+    "tipo": "Carne",
+    "tempo": "Demorado",
+    "categoria": "Cozido",
+    "ingredientes": ["pão", "carne de porco", "alho", "azeite"]
+  },
+  {
+    "nome": "Sopa de cenoura",
+    "tipo": "Sopa",
+    "tempo": "Rápido",
+    "categoria": "Cozido",
+    "ingredientes": ["cenoura", "batata", "cebola", "sal"]
+  },
+  {
+    "nome": "Bifinhos de Frango com Batatas",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Frito",
+    "ingredientes": ["bifinhos de frango", "batatas", "sal", "azeite"]
+  },
+  {
+    "nome": "Caras de Bacalhau com Batatas Cozidas",
+    "tipo": "Peixe",
+    "tempo": "Normal",
+    "categoria": "Cozido",
+    "ingredientes": ["caras de bacalhau", "batatas", "cebola", "azeite"]
+  },
+  {
+    "nome": "Sopa da Pedra",
+    "tipo": "Sopa",
+    "tempo": "Demorado",
+    "categoria": "Cozido",
+    "ingredientes": ["feijão", "chouriço", "batata", "carne de porco"]
+  },
+  {
+    "nome": "Pizza",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Forno",
+    "ingredientes": ["massa de pizza", "queijo", "molho de tomate", "fiambre"]
+  },
+  {
+    "nome": "Strogonoff",
+    "tipo": "Carne",
+    "tempo": "Normal",
+    "categoria": "Estufado",
+    "ingredientes": ["frango", "natas", "cebola", "cogumelos"]
+  },
+  {
+    "nome": "Bacalhau à Brás",
+    "tipo": "Peixe",
+    "tempo": "Normal",
+    "categoria": "Frito",
+    "ingredientes": ["bacalhau", "batata palha", "ovos", "cebola"]
+  },
+  {
+    "nome": "Sardinhas",
+    "tipo": "Peixe",
+    "tempo": "Rápido",
+    "categoria": "Grelhado",
+    "ingredientes": ["sardinhas", "sal", "azeite", "alho"]
+  },
+  {
+    "nome": "Cozido à Portuguesa",
+    "tipo": "Carne",
+    "tempo": "Demorado",
+    "categoria": "Cozido",
+    "ingredientes": ["couve", "enchidos", "batata", "cenoura"]
+  },
+  {
+    "nome": "Salada de Polvo",
+    "tipo": "Peixe",
+    "tempo": "Normal",
+    "categoria": "Frio",
+    "ingredientes": ["polvo", "cebola", "azeite", "vinagre"]
+  },
+  {
+    "nome": "Lulas com Batatas Cozidas",
+    "tipo": "Peixe",
+    "tempo": "Normal",
+    "categoria": "Cozido",
+    "ingredientes": ["lulas", "batatas", "cebola", "azeite"]
+  },
+  {
+    "nome": "Bitoque",
+    "tipo": "Carne",
+    "tempo": "Rápido",
+    "categoria": "Frito",
+    "ingredientes": ["bife", "ovo", "batatas", "arroz"]
+  },
+  {
+    "nome": "Arroz de Pato",
+    "tipo": "Carne",
+    "tempo": "Demorado",
+    "categoria": "Forno",
+    "ingredientes": ["pato", "arroz", "chouriço", "cebola"]
+  },
+  {
+    "nome": "Sushi",
+    "tipo": "Peixe",
+    "tempo": "Demorado",
+    "categoria": "Frio",
+    "ingredientes": ["arroz de sushi", "alga nori", "peixe cru", "vinagre de arroz"]
+  },
+  {
+    "nome": "Massa com Legumes",
+    "tipo": "Vegetariano",
+    "tempo": "Rápido",
+    "categoria": "Cozido",
+    "ingredientes": ["massa", "cenoura", "courgette", "brócolos"]
   }
 ]

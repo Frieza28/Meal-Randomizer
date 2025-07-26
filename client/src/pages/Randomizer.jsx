@@ -11,6 +11,7 @@ function Randomizer() {
     categoria: ''
   });
 
+
   const fetchSurpresa = async () => {
     const res = await fetch('http://localhost:3001/randomizer/surpresa');
     const data = await res.json();
@@ -85,12 +86,15 @@ function Randomizer() {
               <option value="Carne">Carne</option>
               <option value="Peixe">Peixe</option>
               <option value="Vegetariano">Vegetariano</option>
+              <option value="Sopa">Sopa</option>
+              <option value="Ambos">Ambos</option>
             </select>
 
             <select onChange={(e) => setFiltros({ ...filtros, tempo: e.target.value })}>
               <option value="">Tempo</option>
               <option value="Rápido">Rápido</option>
               <option value="Normal">Normal</option>
+              <option value="Demorado">Demorado</option>
             </select>
 
             <select onChange={(e) => setFiltros({ ...filtros, categoria: e.target.value })}>
@@ -98,11 +102,16 @@ function Randomizer() {
               <option value="Grelhado">Grelhado</option>
               <option value="Frito">Frito</option>
               <option value="Forno">Forno</option>
+              <option value="Cozido">Cozido</option>
+              <option value="Assado">Assado</option>
+              <option value="Frio">Frio</option>
+              <option value="Estufado">Estufado</option>
             </select>
 
             <button onClick={fetchEscolha}>Filtrar</button>
           </div>
         )}
+
       </div>
 
       {resultado && (
