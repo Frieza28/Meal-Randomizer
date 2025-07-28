@@ -5,20 +5,20 @@
   padding: 0;
 }
 
-html, body, #root {
+html, body {
   height: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e4e8eb; /* Aplica o fundo global */
   font-family: sans-serif;
   text-align: center;
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   flex: 1;
 }
 
@@ -38,4 +38,7 @@ main {
 
 .app-main {
   flex: 1;
+}
+#root, .app-wrapper, .app-main {
+  background-color: transparent;
 }

@@ -5,8 +5,7 @@
   min-height: calc(100vh - 200px); /* ou mesmo 220px */
   padding: 4rem 5% 5rem 5%;
   gap: 2rem;
-  background-color: #EEF2F4;
-
+  background-color: #e4e8eb;
 }
 
 
@@ -38,21 +37,25 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  text-align: left;
   height: auto;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+  text-align: justify;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .home-text h1 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: center;
 
 }
 
 .home-text p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: center;
 
 }
 .btn-sortear {
