@@ -1,0 +1,61 @@
+.contact-container {
+  flex: 1;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  text-align: center;
+  height: auto;
+}
+
+.contact-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .contact-image {
+    max-width: 100%;
+  }
+
+  .contact-text {
+    text-align: center;
+    padding: 1rem;
+  }
+}

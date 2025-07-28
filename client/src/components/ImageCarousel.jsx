@@ -6,7 +6,6 @@ import './ImageCarousel.css';
 import prato1 from '../assets/cozido-portuguesa-transmontano.jpeg';
 import prato2 from '../assets/Grilled_Sardines.jpg';
 import prato3 from '../assets/francesinha.jpg';
-console.log(prato1, prato2, prato3);
 
 function ImageCarousel() {
   const settings = {

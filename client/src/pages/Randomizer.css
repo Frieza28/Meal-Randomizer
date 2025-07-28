@@ -3,12 +3,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 180px); /* reduzido para evitar overflow */
-  padding: 2rem 1rem;
+  flex: 1;
+  max-width: 900px;
+  min-height: calc(100vh - 180px);
+  margin: auto;
+  padding: 2rem;
   box-sizing: border-box;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
   text-align: center;
+  font-family: 'Segoe UI', sans-serif;
 }
-
 
 .randomizer-page h1 {
   font-size: 2.5rem;
@@ -24,7 +30,8 @@
   margin-bottom: 2rem;
 }
 
-.modo-buttons button {
+.modo-buttons button,
+.filtros button {
   padding: 0.8rem 1.5rem;
   background-color: white;
   border: 2px solid #03ba00;
@@ -73,18 +80,6 @@
   width: 100%;
 }
 
-
-.filtros button {
-  background-color: #03ba00;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.4rem;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
 .filtros button:hover {
   background-color: #029a00;
 }
@@ -98,28 +93,6 @@
   display: inline-block;
 }
 
-/* Envolve a página toda num min-height */
-body, html {
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Ocupa o espaço disponível */
-.randomizer-page {
-  flex: 1;
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  background-color: #f5f7fa;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Estilo para o botão SORTAR */
 .modo-container button,
 .filtros button {
   background-color: #03ba00;
@@ -136,23 +109,6 @@ body, html {
 
 .modo-container button:hover,
 .filtros button:hover {
-  background-color: #029a00;
-}
-
-.btn-sortear {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #03ba00;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-sortear:hover {
   background-color: #029a00;
 }
 

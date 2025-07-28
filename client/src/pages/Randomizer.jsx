@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Randomizer.css';
 
 function Randomizer() {
-  const [modo, setModo] = useState('surpresa'); // modo atual
+  const [modo, setModo] = useState('surpresa'); 
   const [resultado, setResultado] = useState(null);
   const [lista, setLista] = useState('');
   const [filtros, setFiltros] = useState({
@@ -10,7 +10,6 @@ function Randomizer() {
     tempo: '',
     categoria: ''
   });
-
 
   const fetchSurpresa = async () => {
     const res = await fetch('http://localhost:3001/randomizer/surpresa');
@@ -26,7 +25,6 @@ function Randomizer() {
   };
 
   const fetchEscolha = async () => {
-    // Bloquear quando nenhum filtro for selecionado
     if (!filtros.tipo && !filtros.tempo && !filtros.categoria) {
       setResultado({ nome: 'Nenhuma refeição encontrada.' });
       return;
@@ -56,7 +54,7 @@ function Randomizer() {
       <div className="modo-buttons">
         <button onClick={() => { setModo('surpresa'); setResultado(null); }}>Surpresa Total</button>
         <button onClick={() => { setModo('lista'); setResultado(null); }}>Modo Lista</button>
-        <button onClick={() => { setModo('escolha'); setResultado(null); }}>Modo Escolha</button>
+        <button onClick={() => { setModo('escolha'); setResultado(null); }}>Modo Filtro</button>
       </div>
 
       <div className="modo-container">
